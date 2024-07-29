@@ -1,0 +1,24 @@
+.navbar {
+  background-color: #21222A;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-title {
+  display: flex;
+}
+
+.title {
+  color: lightblue;
+  padding-left: 10px;
+}
+
+.nav-links {
+  margin-top: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
