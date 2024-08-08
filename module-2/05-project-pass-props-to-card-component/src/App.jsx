@@ -15,11 +15,16 @@ Challenge: Pass props to the Card component and display that data
 */
 
 export default function App() {
-            // <Hero />
     return (
         <div>
             <Navbar />
-            <Card />
+            <Card
+                img="katie-zaferes.png"
+                rating="5.0"
+                reviewCount="6"
+                country="Ukraine"
+                title="Life Lessons with Katie Zaferes"
+                price="136" />
         </div>
     )
 }
