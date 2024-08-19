@@ -1,6 +1,5 @@
 import React from "react"
 import boxes from "./boxes"
-import Box from "./components/Box"
 
 export default function App() {
     /**
@@ -12,12 +11,18 @@ export default function App() {
      *    (Don't worry about using the "on" property yet)
      */
 
-    // const [boxes, setBoxes] = React.useState(boxes)
+    const [boxesArray, setBoxesArray] = React.useState(boxes)
+    
+    const boxesDisplay = boxesArray.map(box => (
+        <div key={box.id} className={box.on ? 'box box-filled' : 'box'}></div>
+    ))
 
     return (
         <main>
             <h1>Boxes will go here</h1>
-            <Box />
+            <div className="boxes">
+                {boxesDisplay}
+            </div>
         </main>
     )
 }
