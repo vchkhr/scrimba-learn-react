@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  gap: 10px;
+}
+
+.box {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+}
